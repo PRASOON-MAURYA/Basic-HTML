@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: .5vh solid blueviolet;
+            
+            height: 45vh;
+            border-radius: 5vh;
+            margin: 2vh;
+        }
+        .item{
+            height: 40vh;
+            width: 40vh;
+            border: .4vh solid blue;
+            border-radius: 2.5vh;
+            margin: 5vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            /* animation: sm 4s linear infinite; */
+        }
+        .circle{
+            border: 1vh solid blue;
+            border-top: 1vh solid rgb(0, 225, 255);
+            border-bottom: 1vh solid rgb(0, 225, 255);
+            border-radius: 50%;
+            height: 10vh;
+            width: 10vh;
+            animation: pm 2s linear infinite;
+        }
+        #circle1:hover{
+            border-bottom: 1vh solid rgb(0, 0, 0);
+            animation: pm 4s linear infinite;
+        }
+        #circle2{
+            border: 1vh solid rgb(255, 0, 255);
+            border-top: 1vh solid rgb(255, 0, 0);
+            border-left: 1vh solid rgb(0, 225, 255);
+            border-right: 1vh solid blue;
+            border-radius: 50%;
+            height: 10vh;
+            width: 10vh;
+            animation: sm 4s linear infinite;
+        }
+        #circle2:hover{
+            animation: sm 2s linear infinite;
+        }
+        @keyframes pm {
+            0%
+            {
+                transform: rotate(360deg);
+            }
+            100%
+            {
+                transform: rotate(0deg);
+            }
+        }
+        /* @keyframes sm {
+            0%
+            {
+                transform: rotate(0deg);
+            }
+
+            75%
+            {
+                transform: rotate(180deg);
+            }
+
+            
+        } */
+
+        @keyframes sm {
+    /* @keyframes spin{ */
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container" id="container1">
+        <div class="item" id="item1">
+            <div class="circle" id="circle1">
+
+            </div>
+        </div>
+        <div class="item" id="item2">
+            <a href="https://facebook.com">
+                
+                <div class="circle" id="circle2">
+                </div>
+            </a>  
+        </div>
+    </div>
+    <div class="container" id="container2">
+        <div class="item" id="item3">
+            <div class="circle" id="circle3">
+                
+            </div>
+        </div>
+        <div class="item" id="item4">
+            <div class="circle" id="circle4">
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
